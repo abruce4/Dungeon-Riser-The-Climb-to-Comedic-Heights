@@ -1,6 +1,6 @@
-1-false-Gloomy Chamber-0-0-2-0-A dimly lit chamber with damp walls. The air feels heavy and musty.-0
-2-false-Enigmatic Sanctuary-3-4-0-1-A mysterious sanctuary adorned with ancient symbols. Strange whispers echo through the halls.-0
-3-false-Dusty Hideout-0-2-5-0-An abandoned hideout filled with dusty crates and cobwebs. Sunlight filters through cracks in the ceiling.-0
-4-false-Phantom Hallway-2-0-6-0-A haunting hallway shrouded in darkness. Faint footsteps can be heard in the distance.-0
-5-false-Hidden Catacombs-0-0-0-3-A labyrinth of hidden catacombs, lined with ancient tombs and eerie statues.-0
-6-false-Overlord Throne-0-0-0-4- A grand throne room adorned with opulent decorations. The air is heavy with the scent of power and authority.-6
+1-false-The Haphazard Hallway-0-0-2-0-You stumble into a narrow hallway adorned with crooked torches and whimsical paintings. The walls seem to whisper jokes as you pass, creating an eerie yet humorous ambiance.-0
+2-false-The Labyrinth of Laughter-3-4-0-1-Entering this room feels like stepping onto a giant comedy stage. The floor is checkered with punchlines, and the ceiling echoes with laughter. Be cautious, though; behind the humor lurks hidden traps.-0
+3-false-The Jovial Junction-0-2-5-0-You find yourself at a crossroads where jests and jokes intersect. Signs point in every direction, each promising a different kind of mirthful adventure. Choose wisely; not all paths lead to laughter.-0
+4-false-The Chuckle Chamber-2-0-6-0-As you enter, a wave of giggles washes over you. This chamber is filled with jesters' masks and prankster props. Beware of the mischievous spirits that haunt this humorous haven.-0
+5-false-The Wit's End-0-0-0-3-This room is a playground of puns and wordplay. Every step triggers a clever quip, and the walls seem to challenge your intellect with riddles. Keep your wits about you to navigate this cerebral comedy zone.-5
+6-false-The Whimsical Workshop-0-0-0-4-You've stumbled into the laboratory of a mad comedic genius. Gadgets that defy logic and gags waiting to be unleashed fill this room. Tread lightly; one wrong move could set off a chain reaction of hilarity.-0

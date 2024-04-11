@@ -1,21 +1,40 @@
-Welcome to my game, below you can find the instructions to implement your own map and the commands to play the game.
-This file will be updated as my game is moving forward
+Dungeon Riser: The Climb to Comedic Heights
+Welcome to Dungeon Riser, where dungeons are twistier than a pretzel and monsters have a better sense of humor than most comedians! This text-based adventure game combines puzzle-solving, witty dialogue, and comedic elements to provide players with an entertaining and challenging experience.
 
-The rooms, their description with their 4 potential exits are listed in the Rooms.txt.
+Table of Contents:
 
-You can create your own files for each of the following:
-The Map.txt is the file the game will read to implement your game, if you want to use another map.
-The Items.txt is the file the game will read to implement the items in the game, if you want to use another item list.
-The Puzzles.txt is the file the game will read to implement the puzzles in the game, if you want to use another puzzle list.
-The Monsters.txt is the file the game will read to implement the monsters in the game, if you want to use another monster list.
-make sure it is in the same format as Map.tx and change the file path. (N,S,E,W)
+Introduction
+Game Features
+Installation
+How to Play
+Credits
 
-The commands for the game:
--Enter your name to start
--Enter "stop" at any time to end the game
--Enter N,S,E or W to navigate between rooms (Not case-sensitive)
--Enter "explore" to explore the room you are in
--Enter "inventory" to see your inventory
--Enter "pickup" to pick up an item in the room
--Enter "drop" to drop an item from your inventory
--Enter "help" to see the commands again
+
+Introduction:
+In Dungeon Riser, you play as an accidental hero on a quest to retrieve the legendary "Scepter of Silliness" from the Dungeon of Delirium. Armed with nothing but your wits and a sense of humor, you'll navigate through perplexing puzzles, encounter pun-loving monsters, and collect hilarious items along the way.
+
+
+Game Features:
+Engaging storyline filled with comedy and adventure.
+Text-based gameplay with descriptive room environments.
+Challenging puzzles and riddles to solve.
+A variety of funny items including weapons, armor, and consumables.
+Interactive combat with monsters, each with unique characteristics and humor.
+Multiple endings based on player choices and actions.
+
+
+Installation:
+Clone or download the repository to your local machine.
+Ensure you have Java installed on your system.
+Compile and run the Main.java file to start the game.
+
+
+How to Play:
+Use commands like "N" (North), "S" (South), "E" (East), and "W" (West) to navigate through rooms.
+Interact with items and monsters using commands like "Pickup", "Attack", "Consume", "Equip", and more.
+Solve puzzles and riddles to progress through the dungeon and uncover hidden treasures.
+Explore each room thoroughly for clues, items, and humorous interactions.
+
+
+Credits:
+Game Design and Development: Lincoln Bruce

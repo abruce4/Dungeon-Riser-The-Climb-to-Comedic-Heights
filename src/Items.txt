@@ -1,0 +1,5 @@
+usable-1-Note-Congratulations on finding this note! You've unlocked the 'Reading Skills' achievement. Now, go find more hidden treasures and pun filled notes-1
+equipable-2-Tickle Wand-Lowers monster attack power by making them laugh uncontrollably.-2-10-weapon
+equipable-3-Giggle Vest-Reduces damage taken by making the wearer laugh off minor blows.-4-20-armor
+consumable-4-Laughing Potion-Restores player health and unlocks the 'Healing Laughter' achievement.-3-50-health
+equipable-5-Banana Peel Boomerang-A ranged weapon that causes monsters to slip and fall.-6-20-weapon

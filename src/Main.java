@@ -137,6 +137,7 @@ public class Main {
         Player mainCharacter = new Player(100, 10, "New Player", startingRoom); // Reset player with default values
 
         System.out.println("New game started!");
+        displayStory();
         playGame(mainCharacter); // Start the new game
     }
 

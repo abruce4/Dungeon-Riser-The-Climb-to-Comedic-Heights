@@ -13,6 +13,7 @@ public class Puzzle {
     private int puzzleID;
     private int initialAttempts;
     private boolean isSolved = false;
+    private int expDrop;
 
     //Constructor and Initialization of attributes
     public Puzzle(String puzzleName, String puzzleDescription, String puzzleAnswer, int attempts, int puzzleID, boolean isSolved) {
@@ -23,6 +24,7 @@ public class Puzzle {
         this.puzzleID = puzzleID;
         this.initialAttempts = attempts;
         this.isSolved = isSolved;
+        this.expDrop = 50;
     }
 
     //Getters and Setters
@@ -82,6 +84,14 @@ public class Puzzle {
         this.isSolved = isSolved;
     }
 
+    public int getExpDrop() {
+        return expDrop;
+    }
+
+    public void setExpDrop(int expDrop) {
+        this.expDrop = expDrop;
+    }
+
     //toString method
     @Override
     public String toString() {
@@ -102,6 +112,7 @@ public class Puzzle {
                 int attempts = Integer.parseInt(parts[3].trim());
                 int puzzleID = Integer.parseInt(parts[4].trim());
                 Puzzle puzzle = new Puzzle(puzzleName, puzzleDescription, puzzleAnswer, attempts, puzzleID, false);
+                //Add the puzzle to the list of puzzles
                 listOfPuzzles.add(puzzle);
             }
         } catch (FileNotFoundException e) {

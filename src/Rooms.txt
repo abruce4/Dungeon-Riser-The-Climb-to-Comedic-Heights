@@ -1,48 +1,54 @@
 MAP1:
 
-1
-Gloomy Chamber
-You wake up feeling dizzy in a room. The room is very dark and seems empty.
-A door suddenly opens, and you see a ray of light showing the only way out of the room.
------
-EAST - 2 / Potion / ShuffleWord
+Room 1: The Haphazard Hallway
 
-2
-Enigmatic Sanctuary
-You are in another strange room; this one is not dark, and you can clearly see.
-There is a monster in the middle of the room, one door to his left, one door to his right.
+Description: You stumble into a narrow hallway adorned with crooked torches and whimsical paintings.
+The walls seem to whisper jokes as you pass, creating an eerie yet humorous ambiance.
 -----
-NORTH - 3 / Sword
+EAST - 2
+
+Room 2: The Labyrinth of Laughter
+
+Description: Entering this room feels like stepping onto a giant comedy stage.
+The floor is checkered with punchlines, and the ceiling echoes with laughter.
+Be cautious, though; behind the humor lurks hidden traps.
+-----
+NORTH - 3
 SOUTH - 4
 WEST - 1
 
-3
-Dusty Hideout
-You stepped into the left room; the room looks like a mess and is very dirty.
-A closed door to your right and the door you came from.
------
-EAST - 5 / Key
-SOUTH - 2 / Potion / ShuffleWord
+Room 3: The Jovial Junction
 
-4
-Phantom Hallway
-You stepped into the right room; the room is very clean and has indications.
-A closed door to your left and the door you came from.
+Description: You find yourself at a crossroads where jests and jokes intersect.
+Signs point in every direction, each promising a different kind of mirthful adventure.
+Choose wisely; not all paths lead to laughter.
 -----
-EAST - 5 / Key
-NORTH - 2 / Potion / ShuffleWord
+EAST - 5
+SOUTH - 2
 
-5
-Hidden Catacombs
-You entered another room; there are bodies and skeletons on the ground.
-A single doorway to your right, and it looks very dark.
+Room 4: The Chuckle Chamber
+
+Description: As you enter, a wave of giggles washes over you.
+This chamber is filled with jesters' masks and prankster props.
+Beware of the mischievous spirits that haunt this humorous haven.
 -----
-SOUTH - 2 / Potion / ShuffleWord
-WEST - 3 / Sword
+EAST - 5
+NORTH - 2
 
-6 - Overlord Throne
-A grand throne room adorned with opulent decorations.
-The air is heavy with the scent of power and authority.
+Room 5: The Wit's End
+
+Description: This room is a playground of puns and wordplay.
+Every step triggers a clever quip, and the walls seem to challenge your intellect with riddles.
+Keep your wits about you to navigate this cerebral comedy zone.
+-----
+SOUTH - 2
+WEST - 3
+
+Room 6: The Whimsical Workshop
+
+Description: You've stumbled into the laboratory of a mad comedic genius.
+Gadgets that defy logic and gags waiting to be unleashed fill this room.
+Tread lightly; one wrong move could set off a chain reaction of hilarity.
 -----
 EAST - 1
 WEST - 4
