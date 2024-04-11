@@ -1,0 +1,6 @@
+1-false-Gloomy Chamber-0-0-2-0-A dimly lit chamber with damp walls. The air feels heavy and musty.-0
+2-false-Enigmatic Sanctuary-3-4-0-1-A mysterious sanctuary adorned with ancient symbols. Strange whispers echo through the halls.-0
+3-false-Dusty Hideout-0-2-5-0-An abandoned hideout filled with dusty crates and cobwebs. Sunlight filters through cracks in the ceiling.-0
+4-false-Phantom Hallway-2-0-6-0-A haunting hallway shrouded in darkness. Faint footsteps can be heard in the distance.-0
+5-false-Hidden Catacombs-0-0-0-3-A labyrinth of hidden catacombs, lined with ancient tombs and eerie statues.-0
+6-false-Overlord Throne-0-0-0-4- A grand throne room adorned with opulent decorations. The air is heavy with the scent of power and authority.-6

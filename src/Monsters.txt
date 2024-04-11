@@ -1,0 +1,3 @@
+Slime-A weak and small blue slimy creature who can deal either 5 or 10 damage-50-5-10-10-2
+Gobelin-A medium and small green creature who can deal either 10 or 20 damage-70-10-20-15-3
+Orc-A strong and big green creature who can deal either 20 or 40 damage-100-20-40-20-5
