@@ -1,3 +1,4 @@
-Slime-A weak and small blue slimy creature who can deal either 5 or 10 damage-50-5-10-10-2
-Gobelin-A medium and small green creature who can deal either 10 or 20 damage-70-10-20-15-3
-Orc-A strong and big green creature who can deal either 20 or 40 damage-100-20-40-20-5
+Punchline Pixie-A tiny creature with a big sense of humor. It attacks by bombarding adventurers with rapid fire jokes and pranks who deal either 4 or 8 damage-20-4-8-10-2
+Giggling Goblin-This mischievous creature loves playing pranks on adventurers. It is small in stature but quick on its feet and can deal either 5 or 10 damage-30-5-10-10-3
+Hilarious Harpy-This winged creature delights in singing comedic songs that either lift the spirits of adventurers or make them burst out laughing uncontrollably, dealing either 8 or 16 damage-40-8-16-15-5
+Jester Juggernaut-A massive clown like figure armed with an oversize pie and a rubber chicken. Its attacks are as unpredictable as its sense of humor,dealing 15 or 30 damage-100-15-30-15-6

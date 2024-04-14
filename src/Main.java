@@ -18,15 +18,16 @@ public class Main {
     private static final ArrayList<Monster> listOfMonsters = new ArrayList<>();
 
     public static void main(String[] args) throws InterruptedException {
+
+        loadGameElements();
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your name: ");
         String playerName = scanner.nextLine();
 
-        loadGameElements();
-
         Room startingRoom = listOfRooms.get(0);
-        Player mainCharacter = new Player(100, 10, playerName, listOfRooms.get(0));
-        listOfRooms.get(0).setVisited(true);
+        Player mainCharacter = new Player(100, 10, playerName, startingRoom);
+        startingRoom.setVisited(true);
 
         displayStory();
 
@@ -35,7 +36,7 @@ public class Main {
 
     //Method to load game elements
     private static void loadGameElements() throws InterruptedException {
-        System.out.println("...Loading game elements...");
+        System.out.println("\n...Loading game elements...\n");
         Thread.sleep(1000);
         Puzzle.readPuzzles(PUZZLES_FILE_PATH, listOfPuzzles);
         Monster.readMonsters(MONSTERS_FILE_PATH, listOfMonsters);
@@ -44,7 +45,7 @@ public class Main {
         Room.addItemsToRoom(listOfItems, listOfRooms);
 
 
-        System.out.println("Game elements loaded successfully!");
+        System.out.println("Game elements loaded successfully!\n");
         Thread.sleep(1000);
     }
 
@@ -133,8 +134,11 @@ public class Main {
         loadGameElements();
 
         Room startingRoom = listOfRooms.get(0);
-        listOfRooms.get(0).setVisited(true);
-        Player mainCharacter = new Player(100, 10, "New Player", startingRoom); // Reset player with default values
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your name: ");
+        String playerName = scanner.nextLine();
+        Player mainCharacter = new Player(100, 10, playerName, startingRoom); // Reset player with default values
+        startingRoom.setVisited(true);
 
         System.out.println("New game started!");
         displayStory();
@@ -191,11 +195,19 @@ public class Main {
     }
 
     //Method to display the story
-    private static void displayStory() {
-        System.out.println("Welcome to Dungeon Riser, where dungeons are twistier than a pretzel and monsters have a better sense of humor than most comedians! You, dear adventurer, are not your typical hero. No chiseled jawline or flowing cape for you—just a knack for stumbling into trouble and a heart full of laughter.");
-        System.out.println("It all begins when you, the accidental hero, receive a quest from the town's mayor, who mistakes your enthusiastic nodding for a sign of bravery. Your mission? Venture into the notoriously comedic Dungeon of Delirium and retrieve the legendary 'Scepter of Silliness.'");
-        System.out.println("Armed with nothing but your wits and a sense of humor (because every adventurer needs a punchline), you enter the dungeon filled with perplexing puzzles, pun-loving monsters, and treasures that are worth more in laughs than in gold.");
-        System.out.println("Can you outwit the dungeon's comedic traps, defeat the pun-loving monsters, and emerge as the legendary champion of chuckles? It's time to embark on the solo comedy quest of a lifetime in Dungeon Riser!");
+    private static void displayStory() throws InterruptedException {
+        System.out.println("Welcome to Dungeon Riser, where dungeons are twistier than a pretzel and monsters have a better sense of humor than most comedians! You, dear adventurer,\n are not your typical hero. No chiseled jawline or flowing cape for you—just a knack for stumbling into trouble and a heart full of laughter.\n");
+        System.out.println("It all begins when you, the accidental hero, receive a quest from the town's mayor, who mistakes your enthusiastic nodding for a sign of bravery.\n Your mission? Venture into the notoriously comedic Dungeon of Delirium and retrieve the legendary 'Scepter of Silliness.'\n");
+        Thread.sleep(3000);
+
+        System.out.println("Armed with nothing but your wits and a sense of humor (because every adventurer needs a punchline),\n you enter the dungeon filled with perplexing puzzles, pun-loving monsters, and treasures that are worth more in laughs than in gold.\n");
+        System.out.println("Can you outwit the dungeon's comedic traps, defeat the pun-loving monsters, and emerge as the legendary champion of chuckles?\n It's time to embark on the solo comedy quest of a lifetime in Dungeon Riser!\n");
+        Thread.sleep(3000);
+
+        System.out.println("Armed with your courage and a slightly questionable sense of humor, you step into the Dungeon of Delirium.");
+        System.out.println("The air is thick with anticipation, or maybe that's just the lingering scent of the last adventurer's failed punchlines.\n");
+        System.out.println("As you take your first cautious steps, the echo of a mischievous giggle dances through the corridors, reminding you that this is no ordinary dungeon.\n");
+        Thread.sleep(3000);
     }
 
 }
