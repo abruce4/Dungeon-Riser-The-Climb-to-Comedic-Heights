@@ -7,7 +7,7 @@ public class Main {
 
     // File paths for game elements
     private static final String PUZZLES_FILE_PATH = "src/Puzzles.txt";
-    private static final String MAP_FILE_PATH = "src/Map.txt";
+    private static final String MAP_FILE_PATH = "src/Rooms.txt";
     private static final String ITEMS_FILE_PATH = "src/Items.txt";
     private static final String MONSTERS_FILE_PATH = "src/Monsters.txt";
 
