@@ -13,9 +13,10 @@ public class Monster {
     private int monsterDoubleDamage;
     private int threshold;
     private int monsterRoomID;
+    private int expDrop;
 
     //Constructor and Initialization of attributes
-    public Monster(String monsterName, String monsterDescription, int monsterHealth, int monsterDamage, int monsterDoubleDamage, int threshold, int monsterRoomID) {
+    public Monster(String monsterName, String monsterDescription, int monsterHealth, int monsterDamage, int monsterDoubleDamage, int threshold, int monsterRoomID, int expDrop) {
         this.monsterName = monsterName;
         this.monsterDescription = monsterDescription;
         this.monsterHealth = monsterHealth;
@@ -23,6 +24,7 @@ public class Monster {
         this.monsterDoubleDamage = monsterDoubleDamage;
         this.threshold = threshold;
         this.monsterRoomID = monsterRoomID;
+        this.expDrop = expDrop;
     }
 
     //Getters and Setters
@@ -75,6 +77,13 @@ public class Monster {
         this.monsterRoomID = monsterRoomID;
     }
 
+    public int getExpDrop() {
+        return expDrop;
+    }
+    public void setExpDrop(int expDrop) {
+        this.expDrop = expDrop;
+    }
+
     //toString method
     @Override
     public String toString() {
@@ -96,7 +105,8 @@ public class Monster {
                 int monsterDoubleDamage = Integer.parseInt(monsterData[4].trim());
                 int threshold = Integer.parseInt(monsterData[5].trim());
                 int monsterRoomID = Integer.parseInt(monsterData[6].trim());
-                Monster monster = new Monster(monsterName, monsterDescription, monsterHealth, monsterDamage, monsterDoubleDamage, threshold, monsterRoomID);
+                int expDrop = Integer.parseInt(monsterData[7].trim());
+                Monster monster = new Monster(monsterName, monsterDescription, monsterHealth, monsterDamage, monsterDoubleDamage, threshold, monsterRoomID,expDrop);
                 listOfMonsters.add(monster);
             }
         } catch (FileNotFoundException e) {

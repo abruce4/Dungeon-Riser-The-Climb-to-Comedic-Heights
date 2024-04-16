@@ -14,6 +14,9 @@ public class Player {
     private Room currentRoom;
     private ArrayList<Item> playerInventory;
     private boolean inCombatMode;
+    private int playerLevel;
+    private int playerExperience;
+    private int playerMaxExperience;
 
     //Constructor
     public Player(int PlayerHealth, int PlayerAttack, String playerName, Room startingRoom) {
@@ -26,6 +29,9 @@ public class Player {
         this.currentRoom = startingRoom;
         this.playerInventory = new ArrayList<>();
         this.inCombatMode = false;
+        this.playerLevel = 1;
+        this.playerExperience = 0;
+        this.playerMaxExperience = 100;
     }
 
     //Getters and Setters
@@ -90,6 +96,13 @@ public class Player {
     }
     public void setInCombatMode(boolean inCombatMode) {
         this.inCombatMode = inCombatMode;
+    }
+
+    public int getPlayerLevel() {
+        return playerLevel;
+    }
+    public void setPlayerLevel(int playerLevel) {
+        this.playerLevel = playerLevel;
     }
 
     //Method for player navigation
@@ -332,6 +345,8 @@ public class Player {
         System.out.println("Player Name: " + getPlayerName());
         System.out.println("Player Health: " + getPlayerHealth() + "/" + getPlayerMaxHealth());
         System.out.println("Player Attack: " + getPlayerAttack());
+        System.out.println("Player Level: " + getPlayerLevel());
+        System.out.println("Player Experience: " + playerExperience + "/" + playerMaxExperience);
         if (weapon != null) {
             System.out.println("Weapon: " + weapon.getItemName());
         }
@@ -411,6 +426,8 @@ public class Player {
             if (getCurrentRoom().getMonster().getMonsterHealth() <= 0) {
                 exitCombatMode();
                 System.out.println("You have defeated the " + getCurrentRoom().getMonster().getMonsterName() + ".");
+                playerExperience = playerExperience + getCurrentRoom().getMonster().getExpDrop();
+                levelUp();
                 getCurrentRoom().setMonster(null);
             }
             else {
@@ -440,5 +457,21 @@ public class Player {
     public void exitCombatMode() {
         setInCombatMode(false);
     }//end exitCombatMode
+
+    //Method to level up the player
+    public void levelUp() {
+        if (playerExperience >= playerMaxExperience && playerLevel < 5) {
+            playerLevel++;
+            playerExperience = playerExperience - playerMaxExperience;
+            playerMaxExperience = playerMaxExperience + 100;
+            setPlayerMaxHealth(getPlayerMaxHealth() + 20);
+            setPlayerHealth(getPlayerMaxHealth());
+            setPlayerAttack(getPlayerAttack() + 10);
+            System.out.println("Congratulations! You have leveled up to level " + playerLevel + "!");
+        }
+        else if (playerLevel == 5) {
+            System.out.println("Congratulations on reaching the pinnacle of hilarity! You've unlocked the 'Master of Mirth' achievement.\n Now, go forth and spread joy and laughter throughout the dungeon!");
+        }
+    }//end levelUp
 
 }//end Player
