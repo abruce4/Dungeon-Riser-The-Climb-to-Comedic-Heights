@@ -60,7 +60,7 @@ public class Main {
 
             switch (userInput.toLowerCase()) {
                 case "attack":
-                    player.attackMonster();
+                    player.attackMonster(listOfItems);
                     gameOver(player);
                     break;
                 case "ignore":
@@ -195,19 +195,39 @@ public class Main {
     }
 
     //Method to display the story
-    private static void displayStory() throws InterruptedException {
-        System.out.println("Welcome to Dungeon Riser, where dungeons are twistier than a pretzel and monsters have a better sense of humor than most comedians! You, dear adventurer,\n are not your typical hero. No chiseled jawline or flowing cape for you—just a knack for stumbling into trouble and a heart full of laughter.\n");
-        System.out.println("It all begins when you, the accidental hero, receive a quest from the town's mayor, who mistakes your enthusiastic nodding for a sign of bravery.\n Your mission? Venture into the notoriously comedic Dungeon of Delirium and retrieve the legendary 'Scepter of Silliness.'\n");
-        Thread.sleep(3000);
+    private static void displayStory() {
+        String message = "\n\n               Welcome to Dungeon Riser, where dungeons are twistier than a pretzel and monsters have a better sense of humor than most comedians! \n"
+        + "     You, dear adventurer, are not your typical hero. No chiseled jawline or flowing cape for you—just a knack for stumbling into trouble and a heart full of \n"
+        + "     laughter. It all begins when you, the accidental hero, receive a quest from the town's mayor, who mistakes your enthusiastic nodding for a sign of bravery.\n"
+        + "               Your mission? Venture into the notoriously comedic Dungeon of Delirium and retrieve the legendary 'Scepter of Silliness.'\n";
 
-        System.out.println("Armed with nothing but your wits and a sense of humor (because every adventurer needs a punchline),\n you enter the dungeon filled with perplexing puzzles, pun-loving monsters, and treasures that are worth more in laughs than in gold.\n");
-        System.out.println("Can you outwit the dungeon's comedic traps, defeat the pun-loving monsters, and emerge as the legendary champion of chuckles?\n It's time to embark on the solo comedy quest of a lifetime in Dungeon Riser!\n");
-        Thread.sleep(3000);
+        String message2 = "\n\n               Armed with nothing but your wits and a sense of humor (because every adventurer needs a punchline), you enter the dungeon\n"
+        + "     filled with perplexing puzzles, pun-loving monsters, and treasures that are worth more in laughs than in gold. Can you outwit the dungeon's comedic traps,\n"
+        + "     defeat the pun-loving monsters, and emerge as the legendary champion of chuckles? It's time to embark on the solo comedy quest of a lifetime in Dungeon Riser!\n";
 
-        System.out.println("Armed with your courage and a slightly questionable sense of humor, you step into the Dungeon of Delirium.");
-        System.out.println("The air is thick with anticipation, or maybe that's just the lingering scent of the last adventurer's failed punchlines.\n");
-        System.out.println("As you take your first cautious steps, the echo of a mischievous giggle dances through the corridors, reminding you that this is no ordinary dungeon.\n");
-        Thread.sleep(3000);
+        String message3 = "\n\n               Armed with your courage and a slightly questionable sense of humor, you step into the Dungeon of Delirium.\n"
+        + "     The air is thick with anticipation, or maybe that's just the lingering scent of the last adventurer's failed punchlines. As you take\n"
+        + "     your first cautious steps, the echo of a mischievous giggle dances through the corridors, reminding you that this is no ordinary dungeon.\n";
+
+        for (char ch : message.toCharArray()) {
+            System.out.print(ch);
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                System.out.println("Thread interrupted");
+            }
+        }
+
+        for (char ch : message2.toCharArray()) {
+            System.out.print(ch);
+            try {
+                Thread.sleep(30);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                System.out.println("Thread interrupted");
+            }
+        }
     }
 
 }

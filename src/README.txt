@@ -58,9 +58,9 @@ MAP1:
           _____     _____
             |
             |
-_____     _____
-| 1 |-----| 2 |
-_____     _____
+_____     _____     _____
+| 1 |-----| 2 |     | 7 |
+_____     _____     _____
             |
             |
           _____     _____
@@ -125,6 +125,14 @@ EAST - 1
 WEST - 4
 Items in Room: 6 - Banana peel
 Monsters in Room: 6 - Jester Juggernaut
+
+Room 7: Clown's Chamber
+Description: "Enter with a laugh!" Stepping through, you find yourself in a whimsical chamber filled with oversized shoes,
+colorful balloons, and an inexplicable number of rubber chickens. The walls are adorned with painted smiles that seem to
+follow your every move. Laughter echoes through the room, hinting at the presence of a mischievous entertainer lurking nearby.
+-----
+Items in Room: 7 - Scepter of Silliness
+Monsters in Room: 7 - Clown Prince
 
 
 Credits:

@@ -418,7 +418,7 @@ public class Player {
     }//end ignoreMonster
 
     //Method to attack a monster
-    public void attackMonster() {
+    public void attackMonster(ArrayList<Item> listOfItems) {
         if (getCurrentRoom().getMonster() != null) {
             setInCombatMode(true);
             getCurrentRoom().getMonster().setMonsterHealth(getCurrentRoom().getMonster().getMonsterHealth() - getPlayerAttack());
@@ -428,6 +428,7 @@ public class Player {
                 System.out.println("You have defeated the " + getCurrentRoom().getMonster().getMonsterName() + ".");
                 playerExperience = playerExperience + getCurrentRoom().getMonster().getExpDrop();
                 levelUp();
+                getCurrentRoom().getMonster().dropItem(getCurrentRoom().getMonster(), this,listOfItems );
                 getCurrentRoom().setMonster(null);
             }
             else {

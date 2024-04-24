@@ -14,9 +14,10 @@ public class Monster {
     private int threshold;
     private int monsterRoomID;
     private int expDrop;
+    private int itemDrop;
 
     //Constructor and Initialization of attributes
-    public Monster(String monsterName, String monsterDescription, int monsterHealth, int monsterDamage, int monsterDoubleDamage, int threshold, int monsterRoomID, int expDrop) {
+    public Monster(String monsterName, String monsterDescription, int monsterHealth, int monsterDamage, int monsterDoubleDamage, int threshold, int monsterRoomID, int expDrop, int itemDrop) {
         this.monsterName = monsterName;
         this.monsterDescription = monsterDescription;
         this.monsterHealth = monsterHealth;
@@ -25,6 +26,7 @@ public class Monster {
         this.threshold = threshold;
         this.monsterRoomID = monsterRoomID;
         this.expDrop = expDrop;
+        this.itemDrop = itemDrop;
     }
 
     //Getters and Setters
@@ -84,6 +86,14 @@ public class Monster {
         this.expDrop = expDrop;
     }
 
+    public int getItemDrop() {
+        return itemDrop;
+    }
+
+    public void setItemDrop(int itemDrop) {
+        this.itemDrop = itemDrop;
+    }
+
     //toString method
     @Override
     public String toString() {
@@ -106,7 +116,8 @@ public class Monster {
                 int threshold = Integer.parseInt(monsterData[5].trim());
                 int monsterRoomID = Integer.parseInt(monsterData[6].trim());
                 int expDrop = Integer.parseInt(monsterData[7].trim());
-                Monster monster = new Monster(monsterName, monsterDescription, monsterHealth, monsterDamage, monsterDoubleDamage, threshold, monsterRoomID,expDrop);
+                int itemDrop = Integer.parseInt(monsterData[8].trim());
+                Monster monster = new Monster(monsterName, monsterDescription, monsterHealth, monsterDamage, monsterDoubleDamage, threshold, monsterRoomID, expDrop, itemDrop);
                 listOfMonsters.add(monster);
             }
         } catch (FileNotFoundException e) {
@@ -125,6 +136,16 @@ public class Monster {
         else {
             player.setPlayerHealth(player.getPlayerHealth() - monsterDamage);
             System.out.println("The " + getMonsterName() + " dealt " + monsterDamage + " damage to you!");
+        }
+    }
+
+    //Method for monster to drop an item
+    public void dropItem(Monster monster, Player player, ArrayList<Item> listOfItems) {
+        for (Item item : listOfItems) {
+            if (item.getItemID() == monster.getItemDrop() && monster.getItemDrop() != 0) {
+                player.getPlayerInventory().add(item);
+                System.out.println("The " + monster.getMonsterName() + " dropped a " + item.getItemName() + "!");
+            }
         }
     }
 }

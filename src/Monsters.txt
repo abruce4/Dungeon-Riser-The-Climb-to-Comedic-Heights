@@ -1,4 +1,5 @@
-Punchline Pixie-A tiny creature with a big sense of humor. It attacks by bombarding adventurers with rapid fire jokes and pranks who deal either 4 or 8 damage-20-4-8-10-2-25
-Giggling Goblin-This mischievous creature loves playing pranks on adventurers. It is small in stature but quick on its feet and can deal either 5 or 10 damage-30-5-10-10-3-50
-Hilarious Harpy-This winged creature delights in singing comedic songs that either lift the spirits of adventurers or make them burst out laughing uncontrollably, dealing either 8 or 16 damage-40-8-16-15-5-75
-Jester Juggernaut-A massive clown like figure armed with an oversize pie and a rubber chicken. Its attacks are as unpredictable as its sense of humor,dealing 15 or 30 damage-100-15-30-15-6-150
+Punchline Pixie-A tiny creature with a big sense of humor. It attacks by bombarding adventurers with rapid fire jokes and pranks who deal either 4 or 8 damage-20-4-8-10-2-25-0
+Giggling Goblin-This mischievous creature loves playing pranks on adventurers. It is small in stature but quick on its feet and can deal either 5 or 10 damage-30-5-10-10-3-50-0
+Hilarious Harpy-This winged creature delights in singing comedic songs that either lift the spirits of adventurers or make them burst out laughing uncontrollably, dealing either 8 or 16 damage-40-8-16-15-5-75-0
+Jester Juggernaut-A massive clown like figure armed with an oversize pie and a rubber chicken. Its attacks are as unpredictable as its sense of humor,dealing 15 or 30 damage-100-15-30-15-6-150-6
+Clown Prince-The Clown Prince is the mastermind behind the mirthful mayhem in the Clown's Chamber. He is as dangerous as he is funny, dealing 20 or 40 damage-200-20-40-20-7-0-7
