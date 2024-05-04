@@ -74,6 +74,10 @@ public class Main {
                     String itemToConsume = scanner.nextLine();
                     player.consumeItem(itemToConsume);
                     break;
+                case "use" :
+                    System.out.println("Which item would you like to use?");
+                    String itemToUse = scanner.nextLine();
+                    player.teleportation(itemToUse, listOfRooms);
                 case "status":
                     player.checkPlayerStatus();
                     break;
@@ -191,6 +195,16 @@ public class Main {
         else if (input.equalsIgnoreCase("exit")) {
             System.out.println("Thanks for playing!");
             System.exit(0);
+        }
+    }
+
+    //Method to check if the player won the game
+    public static void checkWin(Player player) {
+        for (Item item : player.getPlayerInventory()) {
+            if (item.getItemName().equalsIgnoreCase("Scepter of Silliness")) {
+                System.out.println("Congratulations! You have won the game!");
+                System.exit(0);
+            }
         }
     }
 

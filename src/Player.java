@@ -475,4 +475,16 @@ public class Player {
         }
     }//end levelUp
 
+    //Method to check if the player using the teleportation items
+    public void teleportation(String itemName, ArrayList<Room> listOfRooms) {
+        for (Item item : playerInventory) {
+            if (item.getItemName().equalsIgnoreCase(itemName)) {
+                System.out.println("As you put on the comically oversized red nose, a sense of whimsy overtakes you.\n You notice a previously unseen opening in the wall, adorned with colorful streamers and marked with a sign that reads: ");
+                setCurrentRoom(listOfRooms.get(7));
+            } else {
+                System.out.println("You can't do that.");
+            }
+        }
+    }//end teleportation
+
 }//end Player
