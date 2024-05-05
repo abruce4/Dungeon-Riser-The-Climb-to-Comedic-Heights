@@ -19,6 +19,8 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
+        Game.launch(Game.class, args);
+
         loadGameElements();
 
         Scanner scanner = new Scanner(System.in);
