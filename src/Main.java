@@ -1,5 +1,3 @@
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -211,7 +209,7 @@ public class Main {
     }
 
     //Method to display the story
-    private static void displayStory() {
+    public static String displayStory() {
         String message = "\n\n               Welcome to Dungeon Riser, where dungeons are twistier than a pretzel and monsters have a better sense of humor than most comedians! \n"
         + "     You, dear adventurer, are not your typical hero. No chiseled jawline or flowing cape for you—just a knack for stumbling into trouble and a heart full of \n"
         + "     laughter. It all begins when you, the accidental hero, receive a quest from the town's mayor, who mistakes your enthusiastic nodding for a sign of bravery.\n"
@@ -244,6 +242,7 @@ public class Main {
                 System.out.println("Thread interrupted");
             }
         }
+        return message;
     }
 
 }
